@@ -1,0 +1,56 @@
+Client Side Scripting:
+---------------------
+1. Open Node JS command prompt in Administrator level
+2. Make sure it was at Project root folder
+3. Check Node,npm installation status by using following commands
+   node -v    ---> It displays the installed node version
+   npm  -v    ---> It displays the installed npm version
+   otherwise it will throw errors
+4. If not installed install latest version of NODE JS
+   "https://nodejs.org/en/"
+
+5. After that use following command for npm installation globally
+   npm install -g
+   for reference check these links 
+   https://www.npmjs.com/package/npm-install
+6. If the installation of all packages went fine it should show the node & npm versions
+   when we check with option 3
+7. Main thing to be safe in unblock by proxy level
+   If it blocks during installation run following commands
+
+   npm config set proxy http://10.9.17.5:8080
+
+   npm config set http-proxy http://10.9.17.5:8080
+
+   npm config set https-proxy http://10.9.17.5:8080
+8. After that again run "npm install -g"
+9. Install Gulp Server by using following command
+   npm install -g gulp
+10. Check gulp by using ----> gulp -v
+11. If gulp installed it generates automatically a "gulpfile.js" at the project level
+12. Then, run ---> gulp serve
+    Hence, it starts the gulp server and displays the sucess message.
+***Upto this we have done setting up NODE JS, NPM, GULP at project level***
+
+Webpack-Server side scripting:
+------------------------------
+
+1. In CMD at project root folder run "gulp webpack"
+   it will convert all client side files to server side(minified version)
+   at a particular folder named as "dist"
+2. If webpack command worked fine it should display after all conversions
+   "Webpack Compiled Successfully"
+3. Check the project folder and you can find "dist" folder with all minified version of project source
+4. Then, change the paths of all configs which are serving by client to dist and check
+   it should work asusual in case of dist
+5. Then, the whole project will be equal to dist
+6. Start local deployment(IIS) using only dist folder
+7. Once it done we can replica this on Cloud side with some additional things.
+
+
+It's not standard--It was based my work procedure in running local.
+If it is helpful use as reference.
+Thank U !
+
+Same in VCODE if it not works go with CMD at Admin level---Best Way
+
